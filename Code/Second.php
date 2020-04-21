@@ -7,7 +7,6 @@
         <strong>Interesting Fact</strong>
         <br>
         <strong>Life is more beautiful if you could live it. Go, don't kill your time here.</strong>
-    </div>
         <?php   
             include 'footer.php';
         ?>

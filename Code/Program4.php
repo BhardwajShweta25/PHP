@@ -19,7 +19,8 @@
         return false; 
 } 
     $ar = array(1, 3, 5,8, 15, 23);
-    $x = 15;
+    // $x = 15;
+    $x = 7;
     $pos = binarySearch($ar, 0, count($ar), $x);
     if($pos)
         echo "$x is found";

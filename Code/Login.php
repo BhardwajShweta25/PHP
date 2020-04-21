@@ -9,10 +9,12 @@
             Username:  <input type="text" size="12" name="user">
             Password: <input type="password" size="12" name="pass">
             <input type="submit" value="Log in" name="submit" >
-       </form> 
+       
         <?php
-            $userName = $_POST["user"];
-            $userPassword = $_POST["pass"];
+            if(isset($_POST["user"]))        
+                $userName = $_POST["user"];
+            if(isset($_POST["pass"]))
+                $userPassword = $_POST["pass"];
             $login = false;
             $user_info = array(
                "Shweta" => "12345",
@@ -35,6 +37,7 @@
                    echo "<p><h4>Login Failed</h4></p>" . "<br>";
            }
       ?>
+        </form> 
       <br>
       <?php   
           include 'footer.php';
